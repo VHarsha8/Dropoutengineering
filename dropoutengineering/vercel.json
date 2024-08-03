@@ -1,10 +1,16 @@
 {
   "version": 2,
   "builds": [
-    { "src": "app.js", "use": "@vercel/node" }
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/app.js" }
+    {
+      "src": "/(.*)",
+      "dest": "/app.js"
+    }
   ],
   "env": {
     "SUPABASE_URL": "https://uycagxzcbvubjgitdzpz.supabase.co",
@@ -12,5 +18,14 @@
     "EMAIL_USER": "harshavardhan6304@gmail.com",
     "EMAIL_PASS": "rouw pupb jyko yofh",
     "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "SUPABASE_URL": "https://uycagxzcbvubjgitdzpz.supabase.co",
+      "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV5Y2FneHpjYnZ1YmpnaXRkenB6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjI2NzI5NTUsImV4cCI6MjAzODI0ODk1NX0.YybWV63VCdEzLLRFGWHi2Q-nXZo5cU9absvItCPgMNM",
+      "EMAIL_USER": "harshavardhan6304@gmail.com",
+      "EMAIL_PASS": "rouw pupb jyko yofh",
+      "NODE_ENV": "production"
+    }
   }
 }
