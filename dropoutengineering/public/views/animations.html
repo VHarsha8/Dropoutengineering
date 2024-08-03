@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<style>
+    .btn{
+    font-size:2rem;
+    font-weight:700;
+    color:var(--clr-acent);
+    background-color:pink;
+    border:10px solid red;
+    border-radius:5px;
+    margin: 200px;
+    /* transition-property: transform;
+    transition-duration:0.3s;
+    transition-timing-function:ease;
+    transition-delay: 0s; */
+
+    transition:all  0.3s  ;
+}
+
+
+
+
+.btn:hover {
+    transform:translateY(-10px);
+    background-color: red;
+    color:white;
+
+}
+</style>
+<body>
+    <button class="btn">Learn more</button>
+</body>
+</html>

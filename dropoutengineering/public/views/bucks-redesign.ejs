@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUCKS</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Sora:wght@100..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-line {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+    z-index: 50px;
+}
+
+.line1 {
+    transform: translateY(6px);
+}
+
+.line2 {
+    transform: translateY(10px);
+}
+
+.line3 {
+    transform: translateY(14px);
+}
+
+.open .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.open .line2 {
+    opacity: 0;
+}
+
+.open .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+</style>
+<body class="bg-green-950">
+    <nav class="flex items-center border-b-[1.5px] justify-between  rounded-full shadow-xl  p-3 px-5 bg-white">
+        <a href="#" id="brand" class="flex items-center justify-center">
+            <div class="text-lg font-bold text-green-900 md:text-xl font-Gempire-Bold">BUCKS</div>
+        </a>
+        <div id="nav-menu" class="items-center justify-center hidden gap-6 md:flex">
+            <a href="#" class="text-lg font-medium">Sign-in</a>
+            <a href="#"
+                class="px-4 py-[5px] font-medium text-white duration-200 delay-75 border border-green-600 rounded-full text-md hover:bg-black bg-gradient-to-b from-green-800 to-green-500">Get
+                started</a>
+        </div>
+        <button id="menu-toggle" class="w-12 p-2 md:hidden">
+            <div id="hamburger" class="hamburger">
+                <div class="hamburger-line line1"></div>
+                <div class="hamburger-line line2"></div>
+                <div class="hamburger-line line3"></div>
+            </div>
+        </button>
+        <div id="nav-dialog" class="fixed inset-0 z-50 hidden p-3 text-black bg-white rounded-tr-3xl rounded-tl-3xl rounded-br-3xl rounded-bl-3xl">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex items-center gap-2">
+                    <h1 class="text-lg font-bold text-green-800 md:text-2xl font-Gempire-Bold text-bucksdarkgreen">BUCKS</h1>
+                </a>
+                <button id="close-btn" class="w-12 p-2 md:hidden">
+                    
+                </button>
+            </div>
+            <div class="flex flex-col mt-10">
+                <a href="#"
+                    class="px-4 py-3 my-3 text-lg text-white bg-green-800 rounded-lg font-poppins hover:text-black hover:bg-gray-500">About</a>
+                <a href="#"
+                    class="px-4 py-3 my-3 text-lg text-white bg-green-800 rounded-lg font-poppins hover:text-black hover:bg-gray-500">Work</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <section class="container relative flex flex-col-reverse gap-6 px-6 py-10 mx-auto bg-transparent lg:px-10 lg:py-20 md:py-20 md:px-6 md:items-center md:justify-center md:flex-row lg:items-center lg:justify-center lg:flex">
+
+                <div class="flex flex-col gap-6 md:w-1/2">
+                    <h1 class="text-xl font-semibold text-white md:text-4xl font-sora">Empowering you with live foreign exchange rates at your fingertips.</h1>
+                    <p class="text-sm text-white font-poppins">Maximize Your Bucks with Real-Time Exchange Rates.
+                        Your Trusted Source for Accurate and Reliable Forex Data</p>
+                        <div class="flex ">
+                            <a href="#" class="px-4 py-1 text-lg font-medium text-white duration-200 delay-75 border border-green-600 rounded-full md:px-4 md:py-2 lg:py-2 lg:px-4 hover:bg-black bg-gradient-to-b from-green-800 to-green-500">Get started</a>
+                        </div>
+                </div>
+
+                <div class="flex flex-col md:w-1/2">
+                    <img src="styles/img/buckssv.svg" alt="">
+                </div>
+             
+    </section>
+    
+   
+
+    <h1 class="text-2xl font-semibold text-center text-white md:text-4xl md:pt-20 lg:pt-20 font-sora">Services We Provide</h1>
+   
+    <section class="container grid gap-6 px-6 py-10 mx-auto md:px-6 md:pb-20 lg:pb-20 lg:px-10 place-items-center conatiner md:grid-cols-2 lg:grid-cols-4">
+                <div class="grid items-start justify-start gap-4 p-6 bg-gradient-to-b from-gray-800 to-gray-950 rounded-xl">
+                    <svg class="w-8" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-currency-exchange"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M0 5a5.002 5.002 0 0 0 4.027 4.905 6.46 6.46 0 0 1 .544-2.073C3.695 7.536 3.132 6.864 3 5.91h-.5v-.426h.466V5.05c0-.046 0-.093.004-.135H2.5v-.427h.511C3.236 3.24 4.213 2.5 5.681 2.5c.316 0 .59.031.819.085v.733a3.46 3.46 0 0 0-.815-.082c-.919 0-1.538.466-1.734 1.252h1.917v.427h-1.98c-.003.046-.003.097-.003.147v.422h1.983v.427H3.93c.118.602.468 1.03 1.005 1.229a6.5 6.5 0 0 1 4.97-3.113A5.002 5.002 0 0 0 0 5zm16 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0zm-7.75 1.322c.069.835.746 1.485 1.964 1.562V14h.54v-.62c1.259-.086 1.996-.74 1.996-1.69 0-.865-.563-1.31-1.57-1.54l-.426-.1V8.374c.54.06.884.347.966.745h.948c-.07-.804-.779-1.433-1.914-1.502V7h-.54v.629c-1.076.103-1.808.732-1.808 1.622 0 .787.544 1.288 1.45 1.493l.358.085v1.78c-.554-.08-.92-.376-1.003-.787H8.25zm1.96-1.895c-.532-.12-.82-.364-.82-.732 0-.41.311-.719.824-.809v1.54h-.005zm.622 1.044c.645.145.943.38.943.796 0 .474-.37.8-1.02.86v-1.674l.077.018z"></path> </g></svg>
+                        <h1 class="text-xl font-medium text-white font-poppins">Currency Exchange</h1>
+                        <p class="text-base text-gray-300 font-poppins">Facilitates the buying and selling of foreign currencies.</p>
+
+                </div>
+                <div class="grid items-start justify-start gap-4 p-6 bg-gradient-to-b from-gray-800 to-gray-950 rounded-xl">
+                    <svg fill="#ffffff" class="w-9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Economic_sustainability"> <path d="M255,168.08a89.22,89.22,0,1,0,89.21,89.22A89.32,89.32,0,0,0,255,168.08Zm29,56.29h-29a10.19,10.19,0,0,0,0,20.38h.28a26.21,26.21,0,0,1,26.19,26.18v2.56a26.22,26.22,0,0,1-18.47,25v16h-16v-14.8H227v-16h28.24a10.2,10.2,0,0,0,10.19-10.19v-2.56a10.2,10.2,0,0,0-10.19-10.18h-.28a26.19,26.19,0,0,1-8-51.13V194.71h16v13.66h21Z"></path> <path d="M255,128.42A128.88,128.88,0,1,0,383.84,257.3,128.88,128.88,0,0,0,255,128.42Zm0,234.09A105.22,105.22,0,1,1,360.17,257.3,105.34,105.34,0,0,1,255,362.51Z"></path> <path d="M404.15,404.18A210.8,210.8,0,0,0,450,180.41C407.9,72.21,285.61,18.43,177.4,60.54l6.53,16.78c99-38.51,210.79,10.66,249.3,109.62a192.77,192.77,0,0,1-42,204.68l-12.8-12.47a9.51,9.51,0,0,0-16.15,6.94l.48,33.89a9.51,9.51,0,0,0,9.62,9.37l33.89-.4a9.51,9.51,0,0,0,6.52-16.32Z"></path> <path d="M181.85,431a192.44,192.44,0,0,1-60-311l11.34,11a9.51,9.51,0,0,0,16.15-6.94l-.48-33.89a9.49,9.49,0,0,0-9.62-9.37l-33.89.4A9.51,9.51,0,0,0,98.8,97.58l10.13,9.87A210.53,210.53,0,0,0,335.69,451.07l-6.52-16.77A191.29,191.29,0,0,1,181.85,431Z"></path> </g> </g></svg>
+                        <h1 class="text-xl font-medium text-white font-poppins">Currency Conversion</h1>
+                        <p class="text-base text-gray-300 font-poppins">Facilitates the buying and selling of foreign currencies.</p>
+
+                </div>
+                <div class="grid items-start justify-start gap-4 p-6 bg-gradient-to-b from-gray-800 to-gray-950 rounded-xl">
+                    <svg class="w-8" viewBox="0 0 6.3500002 6.3500002" id="svg1976" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs id="defs1970"></defs> <g id="layer1" style="display:inline"> <path d="m 0.26485,5.8204456 a 0.2645835,0.2645835 0 0 0 -0.26563,0.26563 0.2645835,0.2645835 0 0 0 0.26563,0.26367 h 5.82031 a 0.2645835,0.2645835 0 0 0 0.26562,-0.26367 0.2645835,0.2645835 0 0 0 -0.26562,-0.26563 z" id="path726" style="color:#ffffff;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#ffffff;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#ffffff;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#ffffff"></path> <path d="m 1.16328,3.9688856 c -0.34722,0 -0.63476,0.28754 -0.63476,0.63477 v 1.48242 a 0.26460996,0.26460996 0 0 0 0.26562,0.26367 h 1.0586 a 0.26460996,0.26460996 0 0 0 0.26367,-0.26367 v -1.48242 c 0,-0.34723 -0.28755,-0.63477 -0.63477,-0.63477 z" id="path728" style="color:#ffffff;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#ffffff;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#ffffff;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#ffffff"></path> <path d="m 3.0168,3.0684956 c -0.34722,0 -0.63477,0.28753 -0.63477,0.63477 v 2.38281 a 0.26460996,0.26460996 0 0 0 0.26367,0.26367 h 1.0586 a 0.26460996,0.26460996 0 0 0 0.26367,-0.26367 v -2.38281 c 0,-0.34724 -0.28755,-0.63477 -0.63477,-0.63477 z" id="path730" style="color:#ffffff;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#ffffff;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#ffffff;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#ffffff"></path> <path d="m 4.86836,2.2755256 c -0.34722,0 -0.63477,0.28754 -0.63477,0.63477 v 3.17578 a 0.26460996,0.26460996 0 0 0 0.26368,0.26367 h 1.05859 a 0.26460996,0.26460996 0 0 0 0.26563,-0.26367 v -3.17578 c 0,-0.34723 -0.2895,-0.63477 -0.63672,-0.63477 z" id="path732" style="color:#ffffff;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#ffffff;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#ffffff;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"></path> <path d="M 4.6205208,2.5237e-4 A 0.2645835,0.2645835 0 0 0 4.3564534,0.26380219 0.2645835,0.2645835 0 0 0 4.6205208,0.52941905 H 4.8938883 C 3.3974791,1.8159538 1.8306324,2.6151331 0.2161369,2.9142865 A 0.2645835,0.2645835 0 0 0 0.0052984,3.2227949 0.2645835,0.2645835 0 0 0 0.3117388,3.4357016 C 2.050091,3.1136013 3.722697,2.2498105 5.2923138,0.88753671 V 1.1991456 A 0.2645835,0.2645835 0 0 0 5.5558626,1.4647625 0.2645835,0.2645835 0 0 0 5.8214805,1.1991456 V 0.41986501 C 5.8215308,0.19150501 5.62816,2.0237e-4 5.3998008,2.5237e-4 Z" id="path734" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#ffffff;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#ffffff"></path> </g> </g></svg>
+                        <h1 class="text-xl font-medium text-white font-poppins">Market Analysis</h1>
+                        <p class="text-base text-gray-300 font-poppins">Facilitates the buying and selling of foreign currencies.</p>
+
+                </div>
+                <div class="grid items-start justify-start gap-4 p-6 bg-gradient-to-b from-gray-800 to-gray-950 rounded-xl">
+                    <svg fill="#ffffff" class="w-8" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 425.521 425.521" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M317.233,94.552l4.794-9.228c0.273-0.06,0.549-0.106,0.818-0.191c2.402-0.76,4.404-2.442,5.565-4.678l16.597-31.944 c2.419-4.656,0.606-10.391-4.05-12.81l-31.86-16.553c-2.235-1.162-4.842-1.387-7.244-0.628c-2.402,0.76-4.404,2.442-5.565,4.678 l-16.597,31.944c-1.353,2.604-1.38,5.544-0.329,8.054l-4.744,9.131c-10.808-3.918-22.088-6.841-33.732-8.655v-8.673h8.623 c5.247,0,9.5-4.253,9.5-9.5V9.5c0-5.247-4.253-9.5-9.5-9.5h-73.497c-5.247,0-9.5,4.253-9.5,9.5v35.999c0,5.247,4.253,9.5,9.5,9.5 h8.624v8.673C97.581,77.233,30.749,152.711,30.749,243.509c0,100.362,81.65,182.012,182.012,182.012s182.012-81.65,182.012-182.012 C394.773,181.993,364.091,127.514,317.233,94.552z M308.767,40.387l15.001,7.793l-7.837,15.084l-15.001-7.793L308.767,40.387z M295.206,73.909l8.929,4.639l-3.048,5.867c-2.926-1.631-5.897-3.188-8.919-4.66L295.206,73.909z M185.512,19h54.497v16.999 h-54.497V19z M203.636,54.999h18.25v6.727c-3.023-0.15-6.065-0.229-9.125-0.229c-3.06,0-6.101,0.079-9.125,0.229V54.999z M212.76,406.521c-89.885,0-163.012-73.127-163.012-163.012S122.876,80.497,212.76,80.497c89.885,0,163.012,73.127,163.012,163.012 S302.646,406.521,212.76,406.521z"></path> <path d="M212.76,98.783c-79.802,0-144.726,64.924-144.726,144.727s64.924,144.727,144.726,144.727 c79.803,0,144.727-64.924,144.727-144.727S292.564,98.783,212.76,98.783z M212.76,369.236 c-69.326,0-125.726-56.401-125.726-125.727s56.4-125.727,125.726-125.727s125.727,56.401,125.727,125.727 S282.086,369.236,212.76,369.236z"></path> <path d="M235.385,155.2v-16.706c0-5.247-4.253-9.5-9.5-9.5s-9.5,4.253-9.5,9.5v14.922h-7.249v-14.922c0-5.247-4.253-9.5-9.5-9.5 s-9.5,4.253-9.5,9.5V155.2c-15.731,4.954-27.172,19.677-27.172,37.023v21.98c0,17.346,11.441,32.068,27.172,37.023v59.565 c-4.942-3.605-8.172-9.423-8.172-15.994c0-5.247-4.253-9.5-9.5-9.5s-9.5,4.253-9.5,9.5c0,17.346,11.441,32.068,27.172,37.023 v16.706c0,5.247,4.253,9.5,9.5,9.5s9.5-4.253,9.5-9.5v-14.922h7.249v14.922c0,5.247,4.253,9.5,9.5,9.5s9.5-4.253,9.5-9.5v-16.706 c15.732-4.954,27.173-19.677,27.173-37.023v-21.98c0-17.346-11.441-32.069-27.173-37.023v-59.565 c4.942,3.605,8.173,9.423,8.173,15.995v12.211c0,5.247,4.253,9.5,9.5,9.5s9.5-4.253,9.5-9.5v-12.211 C262.558,174.876,251.117,160.154,235.385,155.2z M216.385,172.416v61.593h-7.249v-61.593H216.385z M181.964,214.203v-21.98 c0-6.572,3.23-12.389,8.172-15.994v53.969C185.194,226.592,181.964,220.774,181.964,214.203z M209.136,314.603v-61.593h7.249 v61.593H209.136z M243.558,272.816v21.98c0,6.572-3.23,12.39-8.173,15.995v-53.97C240.327,260.426,243.558,266.244,243.558,272.816 z"></path> </g> </g></svg>
+                        <h1 class="text-xl font-medium text-white font-poppins">Currency Exchange</h1>
+                        <p class="text-base text-gray-300 font-poppins">Facilitates the buying and selling of foreign currencies.</p>
+
+                </div>
+                
+                
+                
+    </section>
+
+    <section class="container relative flex flex-col gap-6 px-6 py-10 mx-auto bg-transparent md:px-6 md:py-20 lg:px-10 lg:py-20 md:flex-row md:items-center md:justify-center lg:items-center lg:justify-center lg:flex">
+        <div class="flex flex-col items-center justify-center md:w-1/2">
+            <img src="styles/img/graphbucks.svg" alt="" class="w-3/4">
+        </div>
+        <div class="flex flex-col gap-6 md:w-1/2">
+            <h1 class="text-2xl font-semibold text-white md:text-4xl font-sora">Dynamic Forex Graphs for Real-Time Analysis
+             </h1>
+            <p class="text-sm text-white font-poppins"> Empower your trading with Dynamic Forex Graphs for Real-Time Analysis
+                Monitor currency trends and fluctuations with our up-to-the-minute graphs. </p>
+                <div class="flex ">
+                    <a href="#" class="px-6 py-1 text-lg font-medium text-white duration-200 delay-75 border border-green-600 rounded-full md:px-6 md:py-2 lg:px-6 lg:py-2 hover:bg-black bg-gradient-to-b from-green-800 to-green-500">Sign-in</a>
+                </div>
+        </div>
+    </section>
+ 
+      <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('nav-dialog').classList.toggle('hidden');
+            this.classList.toggle('open');
+        });
+    </script>
+    
+</body>
+</html>

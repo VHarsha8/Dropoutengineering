@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap');
+
+body {
+    font-family: "Sora", sans-serif;
+    background-color: #000000aa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: "Sora", sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #0d0c22; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 15%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(244, 20%, 17%); /* Darker blue on hover */
+}
+
+/* Style for the "Sign Up" button */
+button.signup {
+    background-color: #2ecc71; /* Green color */
+}
+
+button.signup:hover {
+    background-color: #3c5546; /* Darker green on hover */
+}
+
+nav {
+    height: 60px; /* Set the height of the nav bar */
+    background-color:None;
+    overflow: hidden;
+}
+
+
+nav a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #000000aa;
+    color: white;
+}
+nav i {
+    float: left; /* Align the <i> tag to the left */
+    padding: 5px 0 5px 15px; /* Top, right, bottom, left padding */
+    color: white;
+}
+
+/* form.css */
+/* form.css */
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center; /* Center the form content */
+    margin: auto; /* Center the form horizontally */
+    margin-top: 10vh; /* Adjust the top margin as needed */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: #333333c9 solid 0.1px;
+    border-radius: 5px;
+}
+
+.login button, .navi button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d0c22; /* Violet color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navi button {
+    width: 200px;
+}
+
+.button:hover, .navi button:hover {
+    background-color: #3b3954; /* Darker shade on hover */
+}
+
+.btn:focus {
+    background-color: #1f1c44;
+}
+
+/* signup.css */
+.signup-header {
+    text-align: center;
+    margin-top: 30px; /* Adjust the margin-top value as needed */
+}
+
+.signup-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #333; /* Adjust the color as needed */
+}
+
+/* loader.css */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: none; /* Initially hide the spinner */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.sign-up {
+    max-width: 500px; /* Increase form width */
+}
+.login button,
+.sign-up button {
+    background-color: #4f46e5; /* Change button color */
+    box-shadow: 0px 4px 10px rgba(79, 70, 229, 0.5); /* Change button shadow color */
+    border-radius: 11px; /* Set border radius to 40% */
+}
+
+.name-inputs, .username-email-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; /* Add some space between input rows */
+}
+
+.input-wrapper {
+    width: 48%; /* Each input takes up 48% of the width */
+}
+.sign-up button {
+    width: 50%;
+    margin: 0 auto; /* Center the button horizontally */
+}
+

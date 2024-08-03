@@ -1,0 +1,14 @@
+.btn{
+    font-size:2rem;
+    font-weight:700;
+    color:var(--clr-acent);
+    background-color:var(--clr-rgba);
+    border:10px solid var(--clr-accent);
+    border-radius:5px;
+}
+
+
+.btn:hover {
+    transform:translateY(-10px);
+
+}

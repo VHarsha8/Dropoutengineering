@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Hamburger Menu</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Sora:wght@100..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  
+</head>
+<body class="bg-twitter">
+  <nav class="flex items-center justify-center px-8 py-3 bg-transparent md:bg-transparent">
+    <div class="container flex items-center justify-between mx-auto -z-10">
+      <div class="text-xl font-bold text-white">Manage</div>
+      <div class="items-center justify-center hidden gap-8 text-white md:flex text-md font-poppins">
+        <a href="#" class="font-medium text-gray-400 focus:text-gray-100 hover:text-gray-100 font-poppins">Home </a>
+        <a href="#" class="font-medium text-gray-400 focus:text-gray-100 hover:text-gray-100 font-poppins">About </a>
+        <a href="#" class="font-medium text-gray-400 focus:text-gray-100 hover:text-gray-100 font-poppins">Services </a>
+        <a href="#" class="font-medium text-gray-400 focus:text-gray-100 hover:text-gray-100 font-poppins">Contact </a>
+  
+      </div>
+      <a href="#" class="hidden px-4 py-2 font-medium text-white border rounded-full md:flex border-violet-900 font-poppins text-md hover:bg-gradient-to-br from-violet-600 via-violet-900 to-purple-700">Get started</a>
+      <div class="md:hidden">
+        <div id="hamburger" class="space-y-2 cursor-pointer hamburger">
+          <div class="rounded-lg bar1"></div>
+          <div class="rounded-lg bar2"></div>
+   
+          
+        </div>
+      </div>
+      <ul id="menu" class="fixed inset-0 flex flex-col items-center justify-center space-y-6 bg-violet-950 menu">
+        <li><a href="#" class="text-3xl font-semibold text-white md:text-black hover:text-gray-800">Home</a></li>
+        <li><a href="#" class="text-3xl font-semibold text-white hover:text-gray-800">About</a></li>
+        <li><a href="#" class="text-3xl font-semibold text-white hover:text-gray-800">Services</a></li>
+        <li><a href="#" class="text-3xl font-semibold text-white hover:text-gray-800">Contact</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+        <section class="container flex-col items-center justify-center hidden gap-6 px-6 pt-16 mx-auto md:flex md:px-0">
+                    <div class="flex items-center justify-center p-[1px] text-transparent rounded-full bg-gradient-to-r from-violet-600 via-rose to-violet-900 text-md font-poppins">
+                      <div class="flex items-center justify-center gap-1 px-4 py-2 text-gray-400 rounded-full bg-twitter text-md">
+                        <h1 class="text-sm font-medium font-poppins md:text-md ">Get your Steeze cards now |</h1>
+                        <h1 class="font-medium text-transparent font-poppins bg-gradient-to-tr from-violet-600 via-rose to-violet-900 bg-clip-text"> Learn more 	&rarr;</h1>
+                      </div>
+                      
+
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center gap-6 pt-16">
+                          <h1 class="text-2xl font-medium text-gray-100 md:text-6xl font-raleway">Manage Your Finances </h1>
+                          <p class="font-medium text-gray-400 text-md font-poppins">Effortlessly track spending, Creating budgets and achieve your financial goals.</p>
+                          <a href="#" class="px-6 py-2 font-medium text-gray-100 rounded-full bg-gradient-to-br from-violet-600 via-violet-900 to-purple-700 font-poppins">Download Manage</a>
+                    </div>
+        </section>
+        <section class="container flex flex-col items-center justify-center gap-6 p-6 mx-auto md:hidden md:px-0">
+                    <div class="flex items-center justify-center p-[1px] text-transparent rounded-full bg-gradient-to-r from-violet-600 via-rose to-violet-900 text-md font-poppins">
+                      <div class="flex items-center justify-center gap-1 px-4 py-2 text-gray-400 rounded-full bg-twitter text-md">
+                        <h1 class="text-sm font-medium font-poppins md:text-md ">Get your cards now |</h1>
+                        <h1 class="font-medium text-transparent font-poppins bg-gradient-to-tr from-violet-600 via-rose to-violet-900 bg-clip-text"> Learn more 	&rarr;</h1>
+                      </div>
+                      
+
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center gap-6 p-6">
+                          <h1 class="text-3xl font-medium text-center text-gray-100 md:text-6xl font-raleway">Manage Your Finances </h1>
+                          <p class="font-medium text-center text-gray-400 text-md font-poppins">Effortlessly track spending, Creating budgets and achieve your financial goals.</p>
+                          <a href="#" class="px-6 py-2 font-medium text-gray-100 rounded-full bg-gradient-to-br from-violet-600 via-violet-900 to-purple-700 font-poppins">Download Manage</a>
+                    </div>
+        </section>
+        
+
+
+        <section class="container grid p-6 mx-auto md:p-16 place-items-center ">
+          <div class="grid w-full gap-8 p-10 rounded-lg md:p-16 md:grid-cols-2 place-items-center bg-opacity-40 bg-gradient-to-br from-violet-600 via-violet-900 to-purple-700">
+
+                <div class="grid justify-start gap-4">
+                      <h1 class="font-semibold text-gray-100 md:text-2xl lg:text-3xl font-sora">Want to know more?</h1>
+                      <p class="text-gray-300 md:text-sm lg:text-md font-poppins">We provide 24/7 dedicated supprt along with accoun preservation, risk assessment. Contact us for any FAQ. Manage is so simple to use and understand.</p>
+                </div>
+                <div class="grid gap-4 place-items-center ">
+
+                     <img src="styles/img/atmpin.png" alt="" >
+                      
+                      
+                </div>
+
+         </div>
+        </section>
+
+
+        <section class="container grid gap-6 p-6 mx-auto md:p-16 place-items-center conatiner md:grid-cols-2 lg:grid-cols-3">
+          <div class="grid items-start justify-start gap-4 shadow-xl p-[2px] bg-gradient-to-r from-violet-600 via-rose to-violet-900 rounded-xl">
+            <div class="grid items-start justify-start gap-4 p-6 bg-twitter rounded-xl">
+
+              <svg fill="#ffffff" class="w-9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Economic_sustainability"> <path d="M255,168.08a89.22,89.22,0,1,0,89.21,89.22A89.32,89.32,0,0,0,255,168.08Zm29,56.29h-29a10.19,10.19,0,0,0,0,20.38h.28a26.21,26.21,0,0,1,26.19,26.18v2.56a26.22,26.22,0,0,1-18.47,25v16h-16v-14.8H227v-16h28.24a10.2,10.2,0,0,0,10.19-10.19v-2.56a10.2,10.2,0,0,0-10.19-10.18h-.28a26.19,26.19,0,0,1-8-51.13V194.71h16v13.66h21Z"></path> <path d="M255,128.42A128.88,128.88,0,1,0,383.84,257.3,128.88,128.88,0,0,0,255,128.42Zm0,234.09A105.22,105.22,0,1,1,360.17,257.3,105.34,105.34,0,0,1,255,362.51Z"></path> <path d="M404.15,404.18A210.8,210.8,0,0,0,450,180.41C407.9,72.21,285.61,18.43,177.4,60.54l6.53,16.78c99-38.51,210.79,10.66,249.3,109.62a192.77,192.77,0,0,1-42,204.68l-12.8-12.47a9.51,9.51,0,0,0-16.15,6.94l.48,33.89a9.51,9.51,0,0,0,9.62,9.37l33.89-.4a9.51,9.51,0,0,0,6.52-16.32Z"></path> <path d="M181.85,431a192.44,192.44,0,0,1-60-311l11.34,11a9.51,9.51,0,0,0,16.15-6.94l-.48-33.89a9.49,9.49,0,0,0-9.62-9.37l-33.89.4A9.51,9.51,0,0,0,98.8,97.58l10.13,9.87A210.53,210.53,0,0,0,335.69,451.07l-6.52-16.77A191.29,191.29,0,0,1,181.85,431Z"></path> </g> </g></svg>
+              <h1 class="text-xl font-medium text-white font-poppins">Currency Conversion</h1>
+              <p class="text-base text-gray-300 font-poppins">Facilitates the buying and selling of foreign currencies.</p>
+
+           </div>
+          </div>
+          <!----Card2-->
+          <div class="grid items-start justify-start gap-4 shadow-xl p-[2px] bg-gradient-to-r from-violet-600 via-rose to-violet-900 rounded-xl">
+            <div class="grid items-start justify-start gap-4 p-6 bg-twitter rounded-xl">
+
+              <svg fill="#ffffff" class="w-9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Economic_sustainability"> <path d="M255,168.08a89.22,89.22,0,1,0,89.21,89.22A89.32,89.32,0,0,0,255,168.08Zm29,56.29h-29a10.19,10.19,0,0,0,0,20.38h.28a26.21,26.21,0,0,1,26.19,26.18v2.56a26.22,26.22,0,0,1-18.47,25v16h-16v-14.8H227v-16h28.24a10.2,10.2,0,0,0,10.19-10.19v-2.56a10.2,10.2,0,0,0-10.19-10.18h-.28a26.19,26.19,0,0,1-8-51.13V194.71h16v13.66h21Z"></path> <path d="M255,128.42A128.88,128.88,0,1,0,383.84,257.3,128.88,128.88,0,0,0,255,128.42Zm0,234.09A105.22,105.22,0,1,1,360.17,257.3,105.34,105.34,0,0,1,255,362.51Z"></path> <path d="M404.15,404.18A210.8,210.8,0,0,0,450,180.41C407.9,72.21,285.61,18.43,177.4,60.54l6.53,16.78c99-38.51,210.79,10.66,249.3,109.62a192.77,192.77,0,0,1-42,204.68l-12.8-12.47a9.51,9.51,0,0,0-16.15,6.94l.48,33.89a9.51,9.51,0,0,0,9.62,9.37l33.89-.4a9.51,9.51,0,0,0,6.52-16.32Z"></path> <path d="M181.85,431a192.44,192.44,0,0,1-60-311l11.34,11a9.51,9.51,0,0,0,16.15-6.94l-.48-33.89a9.49,9.49,0,0,0-9.62-9.37l-33.89.4A9.51,9.51,0,0,0,98.8,97.58l10.13,9.87A210.53,210.53,0,0,0,335.69,451.07l-6.52-16.77A191.29,191.29,0,0,1,181.85,431Z"></path> </g> </g></svg>
+              <h1 class="text-xl font-medium text-white font-poppins">Currency Conversion</h1>
+              <p class="text-base text-gray-300 font-poppins">Facilitates the buying and selling of foreign currencies.</p>
+
+           </div>
+          </div>
+              <!----Card 3-->
+          <div class="grid items-start justify-start gap-4 shadow-xl p-[2px] bg-gradient-to-r from-violet-600 via-rose to-violet-900 rounded-xl">
+            <div class="grid items-start justify-start gap-4 p-6 bg-twitter rounded-xl">
+
+              <svg fill="#ffffff" class="w-9" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Economic_sustainability"> <path d="M255,168.08a89.22,89.22,0,1,0,89.21,89.22A89.32,89.32,0,0,0,255,168.08Zm29,56.29h-29a10.19,10.19,0,0,0,0,20.38h.28a26.21,26.21,0,0,1,26.19,26.18v2.56a26.22,26.22,0,0,1-18.47,25v16h-16v-14.8H227v-16h28.24a10.2,10.2,0,0,0,10.19-10.19v-2.56a10.2,10.2,0,0,0-10.19-10.18h-.28a26.19,26.19,0,0,1-8-51.13V194.71h16v13.66h21Z"></path> <path d="M255,128.42A128.88,128.88,0,1,0,383.84,257.3,128.88,128.88,0,0,0,255,128.42Zm0,234.09A105.22,105.22,0,1,1,360.17,257.3,105.34,105.34,0,0,1,255,362.51Z"></path> <path d="M404.15,404.18A210.8,210.8,0,0,0,450,180.41C407.9,72.21,285.61,18.43,177.4,60.54l6.53,16.78c99-38.51,210.79,10.66,249.3,109.62a192.77,192.77,0,0,1-42,204.68l-12.8-12.47a9.51,9.51,0,0,0-16.15,6.94l.48,33.89a9.51,9.51,0,0,0,9.62,9.37l33.89-.4a9.51,9.51,0,0,0,6.52-16.32Z"></path> <path d="M181.85,431a192.44,192.44,0,0,1-60-311l11.34,11a9.51,9.51,0,0,0,16.15-6.94l-.48-33.89a9.49,9.49,0,0,0-9.62-9.37l-33.89.4A9.51,9.51,0,0,0,98.8,97.58l10.13,9.87A210.53,210.53,0,0,0,335.69,451.07l-6.52-16.77A191.29,191.29,0,0,1,181.85,431Z"></path> </g> </g></svg>
+              <h1 class="text-xl font-medium text-white font-poppins">Currency Conversion</h1>
+              <p class="text-base text-gray-300 font-poppins">Facilitates the buying and selling of foreign currencies.</p>
+
+           </div>
+          </div>
+          
+          
+          
+          
+</section>
+  
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

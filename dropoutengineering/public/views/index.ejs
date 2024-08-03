@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Sora:wght@100..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </head>
+<body class="block md:hidden">
+  <nav class="flex items-center justify-between p-3 px-10 bg-blue-900 snap-start">
+    <a href="#" id="brand" class="flex items-center">
+        <div class="text-2xl font-bold text-white font-sora">DORK</div>
+    </a>
+    <div id="nav-menu" class="hidden gap-12 md:flex">
+        <a href="#" class="text-white font-poppins hover:text-gray-500">About</a>
+        <a href="#" class="text-white font-poppins hover:text-gray-500">Work</a>
+        <a href="https://drive.google.com/file/d/1ValwrR-943CT7TUdYDmIJRSzzGsOd6h6/view?usp=drivesdk" target="_blank" class="text-white font-poppins hover:text-gray-500">Resume</a>
+       
+      
+
+    </div>
+
+    <button id="menu-toggle" class="w-12 p-2 md:hidden">
+        <i class="text-white fa-solid fa-bars"></i>
+    </button>
+    <div id="nav-dialog" class="fixed inset-0 z-50 hidden p-3 pr-10 bg-gray-900">
+        <div id="nav-bar" class="flex justify-end ">
+            
+            <button id="close-btn" class="w-12 p-2 md:hidden">
+                <i class="text-white fa-solid fa-x"></i>   
+             </button>
+
+        </div>
+        <div class="flex flex-col gap-2 px-6 ">
+            <a href="#" class="text-white text-md font-poppins hover:text-blue-300">Home</a>
+            <a href="#"  class="text-white text-md font-poppins hover:text-blue-300">Courses</a>
+            <a href="#"  class="text-white text-md font-poppins hover:text-blue-300">Our mentors</a>
+            <div class="flex flex-col items-start justify-start gap-4 mt-2">
+                <a href="#" class="px-8 py-1 font-medium text-center text-white bg-blue-700 rounded-lg text-md font-poppins">My Profile</a>
+                <a href="#" class="px-8 py-1 font-medium text-center text-white bg-blue-700 rounded-lg text-md font-poppins">Logout</a>
+
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</nav>
+  <div class="flex items-center justify-between gap-6 p-4 mx-6 mt-6 bg-gray-900 rounded-xl ">
+    <h1 class="text-xl font-semibold text-white font-poppins">Enroll Now!</h1>
+    <a href="#" class="px-6 py-1 text-xl font-semibold text-white bg-blue-600 rounded-lg font-poppins ">Login</a>
+
+  </div>
+
+    <section class="flex flex-col items-center justify-center gap-2 mx-3 ">
+                
+                <div class="flex flex-col items-center justify-center gap-4 p-6 rounded-xl ">
+                        <h1 class="text-2xl font-bold text-blue-600 font-sora">WELCOME TO <div class="inline-flex mt-2 text-2xl font-bold text-blue-900 font-sora">DORK!</div></h1>
+                </div>
+                <div class="flex items-center justify-center w-3/4 gap-4 rounded-xl">
+                      <img src="styles/img/Hand coding-bro.png" alt="" >
+                </div>
+                <div class="flex flex-col items-center justify-center gap-4 px-4 rounded-xl">
+                      <h1 class="text-sm font-semibold font-playfair">Navigate your way to the top with our courses and thoughtfully curated resources for the dynamic world of competitive programming.</h1>
+                </div>
+                <div class="flex items-center justify-center gap-4 px-4 mt-4 rounded-xl">
+                  <a href="#explore" class="px-6 py-2 text-xl font-semibold text-center text-white bg-blue-900 font-poppins rounded-xl">Explore</a>
+                </div>
+                
+
+    </section>
+    <br>
+    <br>
+    <br>
+        <section  id="explore" class="grid items-center justify-center gap-6 m-6">
+          <!----Card 1 sam-->
+            <div class="grid grid-flow-row gap-3 p-6 duration-200 delay-75 bg-blue-900 rounded-bl-3xl rounded-br-3xl rounded-tr-3xl hover:-translate-y-2">
+                <div class="flex flex-row-reverse items-center justify-end gap-6">
+                    <h1 class="text-2xl font-bold text-white font-poppins ">Why Tech?</h1>
+                    <img src="styles/img/sam.jpg" alt="" class="w-16 rounded-full">    
+                </div> 
+                <h1 class="text-lg tracking-wider text-white font-sora">
+                  " Every master was once a beginner. Don't be afraid to learn and grow "
+                </h1> 
+              </div>                    
+          <!----Card 2 -->
+            <div class="grid grid-flow-row gap-3 p-6 duration-200 delay-75 bg-blue-900 rounded-bl-3xl rounded-br-3xl rounded-tr-3xl hover:-translate-y-2">
+                <div class="flex flex-row-reverse items-center justify-end gap-6">
+                    <h1 class="text-2xl font-bold text-white font-poppins text-wrap">Why Programming?</h1>
+                    <img src="styles/img/code.jpeg" alt="" class="w-16 rounded-full">    
+                </div> 
+                <h1 class="text-lg tracking-wider text-white font-sora">
+                 " Learning to code fosters growth, innovation, and creativity "                </h1> 
+              </div>                    
+          <!----Card 3 -->
+            <div class="grid grid-flow-row gap-3 p-6 duration-200 delay-75 bg-blue-900 rounded-bl-3xl rounded-br-3xl rounded-tr-3xl hover:-translate-y-2">
+                <div class="flex flex-row-reverse items-center justify-end gap-6">
+                    <h1 class="text-2xl font-bold text-white font-poppins">Want new opprtunities?</h1>
+                    <img src="styles/img/grouppp.jpg" alt="" class="w-16 rounded-full">    
+                </div> 
+                <h1 class="text-lg tracking-wider text-white font-sora">
+                  " Opportunities don't happen you create them "
+                </h1> 
+              </div>                                                    
+       </section>
+       <br>
+       <br>
+       <br>
+       <section class="grid items-center justify-center m-6">
+                  <div class="flex flex-col items-center justify-center gap-1">
+                         <svg class="w-12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="m14.25 8.75c-.5 2.5-2.3849 4.85363-5.03069 5.37991-2.64578.5263-5.33066-.7044-6.65903-3.0523-1.32837-2.34784-1.00043-5.28307.81336-7.27989 1.81379-1.99683 4.87636-2.54771 7.37636-1.54771"></path> <polyline points="5.75 7.75,8.25 10.25,14.25 3.75"></polyline> </g></svg>
+                         <h1 class="text-xl font-semibold font-sora" >Problem Solving</h1>
+                         <h1 class="font-medium text-gray-500 text-md font-poppins">Competitive Programming</h1>
+                         <h1 class="font-medium text-gray-500 text-md font-poppins">Data Structures</h1>
+                  </div><br>
+                  <br>
+                  <div class="flex flex-col items-center justify-center gap-1">
+                    <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"class="w-12" viewBox="0 0 35.336 35.336" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M5.468,23.188l-1.31-0.414L0,25.173l2.412,0.763l-0.545,2.472l4.158-2.4l0.296-1.341l2.738-1.581 c-0.398-0.417-0.784-0.853-1.152-1.306L5.468,23.188z"></path> <path d="M26.586,8.453l1.449,1.214l-0.584,0.337c-2.346-3.157-7.523-2.593-10.32-0.084C13.615,6.766,6.322,6.664,5.647,13.2 c-0.874,8.412,11.484,14.932,11.484,14.932S29.49,21.612,28.618,13.2c-0.03-0.296-0.089-0.562-0.146-0.83l0.842-0.486l0.326,1.86 l5.695-6.815L26.586,8.453z M29.63,11.208l-12.499,7.217v-1.972l11.646-6.724l-1.213-1.015l6.697-1.167l-4.359,5.217L29.63,11.208 z"></path> </g> </g> </g></svg>               
+                          <h1 class="text-xl font-semibold font-sora">Learn</h1>
+                         <h1 class="font-medium text-gray-500 text-md font-poppins">Understand</h1>
+                         <h1 class="font-medium text-gray-500 text-md font-poppins">Different Tech Stack</h1>
+                  </div><br>
+                  <br>
+                  <div class="flex flex-col items-center justify-center gap-1">
+                    <svg class="w-12" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M505.837,180.418L279.265,76.124c-7.349-3.385-15.177-5.093-23.265-5.093c-8.088,0-15.914,1.708-23.265,5.093 L6.163,180.418C2.418,182.149,0,185.922,0,190.045s2.418,7.896,6.163,9.627l226.572,104.294c7.349,3.385,15.177,5.101,23.265,5.101 c8.088,0,15.916-1.716,23.267-5.101l178.812-82.306v82.881c-7.096,0.8-12.63,6.84-12.63,14.138c0,6.359,4.208,11.864,10.206,13.618 l-12.092,79.791h55.676l-12.09-79.791c5.996-1.754,10.204-7.259,10.204-13.618c0-7.298-5.534-13.338-12.63-14.138v-95.148 l21.116-9.721c3.744-1.731,6.163-5.504,6.163-9.627S509.582,182.149,505.837,180.418z"></path> <path class="st0" d="M256,346.831c-11.246,0-22.143-2.391-32.386-7.104L112.793,288.71v101.638 c0,22.314,67.426,50.621,143.207,50.621c75.782,0,143.209-28.308,143.209-50.621V288.71l-110.827,51.017 C278.145,344.44,267.25,346.831,256,346.831z"></path> </g> </g></svg>
+                         <h1 class="text-xl font-semibold font-sora">Student Opportunities</h1>
+                         <h1 class="font-medium text-gray-500 text-md font-poppins">Fellowships</h1>
+                         <h1 class="font-medium text-gray-500 text-md font-poppins">Student Program Updates</h1>
+                  </div>
+                  
+       </section>
+       <br>
+       <br>
+       <br>
+           <div id="chartdiv" style="background-color:rgb(236, 236, 236);"></div>
+
+         
+
+
+           <footer class="p-6 bg-gray-900">
+
+            <section class="grid items-center justify-center m-6">
+                     <div class="flex flex-col items-center justify-center gap-2">
+                          <h1 class="text-lg font-semibold text-white font-sora">© DORK 2024  </h1>
+                          <h1 class="text-lg text-white font-sora">  All rights reserved.</h1>
+                     </div><br>
+                    
+                     <div class="flex flex-col items-center justify-center gap-4">
+                      <div class="flex flex-col items-center justify-center gap-2">
+                        <h1 class="mb-2 text-xl font-medium text-white font-sora">Solutions</h1>
+                          <h1 class="font-semibold text-gray-400 font-poppins text-md">Problem Solving</h1>
+                          <h1 class="font-semibold text-gray-400 font-poppins text-md">Oppurtunities</h1>
+                          <h1 class="font-semibold text-gray-400 font-poppins text-md">Learning paths</h1>
+                          <h1 class="font-semibold text-gray-400 font-poppins text-md">About</h1>
+
+                      </div>
+                      <div class="flex flex-col items-center justify-center gap-2">
+                        <h1 class="mb-2 text-xl font-medium text-white font-sora">Section</h1>
+                          <h1 class="font-semibold text-gray-400 font-poppins text-md">Home</h1>
+                          <h1 class="font-semibold text-gray-400 font-poppins text-md">Features</h1>
+                          <h1 class="font-semibold text-gray-400 font-poppins text-md">FAQs</h1>
+                          <h1 class="font-semibold text-gray-400 font-poppins text-md">Pricing</h1>
+
+                      </div>
+
+                          
+                     </div>
+                     <div class="flex ">
+                          <h1 class="text-xl font-semibold "></h1>
+                     </div>
+            </section>
+
+           </footer>
+           <script>
+            am5.ready(function () {
+        
+                // Create root element
+                // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+                var root = am5.Root.new("chartdiv");
+        
+        
+                // Set themes
+                // https://www.amcharts.com/docs/v5/concepts/themes/
+                root.setThemes([
+                    am5themes_Animated.new(root)
+                ]);
+        
+        
+                // Create the map chart
+                // https://www.amcharts.com/docs/v5/charts/map-chart/
+                var chart = root.container.children.push(am5map.MapChart.new(root, {
+                    panX: "rotateX",
+                    panY: "rotateY",
+                    projection: am5map.geoOrthographic(),
+                    paddingBottom: 20,
+                    paddingTop: 20,
+                    paddingLeft: 20,
+                    paddingRight: 20
+                }));
+        
+        
+                // Create main polygon series for countries
+                // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
+                var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
+                    geoJSON: am5geodata_worldLow
+                }));
+        
+                polygonSeries.mapPolygons.template.setAll({
+                    tooltipText: "{name}",
+                    toggleKey: "active",
+                    interactive: true
+                });
+        
+                polygonSeries.mapPolygons.template.states.create("hover", {
+                    fill: root.interfaceColors.get("primaryButtonHover")
+                });
+        
+        
+                // Create series for background fill
+                // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
+                var backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
+                backgroundSeries.mapPolygons.template.setAll({
+                    fill: root.interfaceColors.get("alternativeBackground"),
+                    fillOpacity: 0.1,
+                    strokeOpacity: 0
+                });
+                backgroundSeries.data.push({
+                    geometry: am5map.getGeoRectangle(90, 180, -90, -180)
+                });
+        
+        
+                // Create graticule series
+                // https://www.amcharts.com/docs/v5/charts/map-chart/graticule-series/
+                var graticuleSeries = chart.series.push(am5map.GraticuleSeries.new(root, {}));
+                graticuleSeries.mapLines.template.setAll({ strokeOpacity: 0.1, stroke: root.interfaceColors.get("alternativeBackground") })
+        
+        
+                // Rotate animation
+                chart.animate({
+                    key: "rotationX",
+                    from: 0,
+                    to: 360,
+                    duration: 30000,
+                    loops: Infinity
+                });
+        
+        
+                // Make stuff animate on load
+                chart.appear(1000, 100);
+        
+            }); // end am5.ready()
+            var typed = new Typed(".auto-type", {
+                strings: ["Learn to code", "Build products", "Chase the perfection"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                looped: true
+            })
+        
+            document.getElementById('exploreBtn').addEventListener('click', function () {
+                var featuresSection = document.querySelector('#features');
+                if (featuresSection) {
+                    featuresSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        
+            // Start Typed initially
+            startTyped();
+        
+        </script>
+        
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navDialog = document.getElementById('nav-dialog');
+  const closeBtn = document.getElementById('close-btn');
+
+  menuToggle.addEventListener('click', function() {
+      navDialog.classList.toggle('hidden');
+  });
+
+  closeBtn.addEventListener('click', function() {
+      navDialog.classList.add('hidden');
+  });
+</script>
+</body>
+</html>

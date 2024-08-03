@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES</title>
+    <link href="styles/style.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Sora:wght@100..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+</head>
+<body class=" bg-lightyellow">
+    <nav class="flex items-center justify-between p-2 pl-6 pr-4 mx-6 mt-6 rounded-full bg-rose snap-start">
+        <a href="#" id="brand" class="flex items-center">
+            <div class="text-xl font-bold text-white font-sora">FLAMES</div>
+        </a>
+        <div id="nav-menu" class="hidden gap-12 md:flex">
+            <a href="#" class="text-white font-poppins hover:text-gray-500">Home</a>
+            <a href="#" class="text-white font-poppins hover:text-gray-500">About</a>
+                <a href="#" onclick="tweet()" class="text-white text-md font-poppins hover:text-blue-300">Tweet</a>
+          
+    
+        </div>
+    
+        <button id="menu-toggle" class="w-12 p-2 md:hidden">
+            <i class="text-white fa-solid fa-bars"></i>
+        </button>
+        <div id="nav-dialog" class="fixed inset-0 z-50 hidden p-2 pr-4 mx-6 mt-6 duration-200 delay-75 h-44 bg-rose rounded-3xl">
+            <div id="nav-bar" class="flex justify-end ">
+                
+                <button id="close-btn" class="w-12 p-2 md:hidden">
+                    <i class="text-white fa-solid fa-x"></i>   
+                 </button>
+    
+            </div>
+            <div class="flex flex-col gap-2 px-6 ">
+                <a href="#" class="text-white text-md font-poppins hover:text-blue-300">Home</a>
+                <a href="#"  class="text-white text-md font-poppins hover:text-blue-300">About</a>
+                <div class="flex items-start justify-start">
+                    <a href="#" onclick="tweet()" class="text-white text-md font-poppins hover:text-blue-300">Tweet</a>
+                </div>                
+                
+                
+            </div>
+            
+        </div>
+    </nav>
+
+        <section class="flex items-center justify-center ">
+                      <form action="post" >
+                        <div class="grid grid-flow-row gap-6 place-items-center w-ful">
+                            <img src="styles/img/Love is in the air-bro (1).svg" alt="" >
+                            <input type="text" name="name" placeholder="Name 2" class="px-6 py-3 font-bold border-none rounded-full shadow-lg outline-none appearance-none focus:outline-none focus:ring-rose focus:ring-2 font-cedarville-cursive placeholder-rose w-72">
+                            <input type="text" name="name" placeholder="Name 2" class="px-6 py-3 font-bold border-none rounded-full shadow-lg outline-none appearance-none focus:outline-none focus:ring-rose focus:ring-2 font-cedarville-cursive placeholder-rose w-72">
+                                <a href="#" class="px-5 py-2 font-semibold text-center text-white duration-500 delay-75 rounded-full btn text-md hover:text-rose hover:bg-white bg-rose font-poppins">Get started</a>
+                            
+                         
+                       </div>
+                     
+                                
+                       
+                      </form>
+       
+        </section>
+
+
+
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const navDialog = document.getElementById('nav-dialog');
+            const closeBtn = document.getElementById('close-btn');
+          
+            menuToggle.addEventListener('click', function() {
+                navDialog.classList.toggle('hidden');
+            });
+          
+            closeBtn.addEventListener('click', function() {
+                navDialog.classList.add('hidden');
+            });
+          </script>   
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script>
+    function tweet() {
+      // URL-encode the text you want to pre-fill in the tweet
+      const text = encodeURIComponent("Check out this awesome flames website! #flameit   https://flamesmobile.tiiny.site/");
+  
+      // Create the tweet URL using Web Intents
+      const tweetURL = `https://twitter.com/intent/tweet?text=${text}`;
+  
+      // Open the tweet window
+      window.open(tweetURL, "_blank", "width=600,height=400");
+    }
+  </script>
+  
+          
+</body>
+</html>
